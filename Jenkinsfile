@@ -58,11 +58,8 @@ pipeline {
         //     }
         // }
         // thang them
-<<<<<<< HEAD
         // test1 co thay khong?
-=======
         //test 1 tu them
->>>>>>> test1
 
         stage('Prepare ENV for Build') {
             steps {
