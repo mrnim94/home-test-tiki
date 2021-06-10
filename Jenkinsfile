@@ -57,6 +57,7 @@ pipeline {
         //         }
         //     }
         // }
+        // thang them
 
         stage('Prepare ENV for Build') {
             steps {
