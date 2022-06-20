@@ -1,2 +1,2 @@
-@Library("pipeline-shared-lib") _
+@Library("nimtechnology-share-libraries") _
 execBuildOrDeploy("build")
