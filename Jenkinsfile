@@ -2,5 +2,5 @@
 // ciIntegrateCd()
 
 node {
-  return scm.getUserRemoteConfigs()[0].getUrl()
+  echo scm.getUserRemoteConfigs()[0].getUrl()
 }
