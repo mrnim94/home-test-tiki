@@ -6,5 +6,5 @@ import (
 )
 
 func Welcome(c echo.Context) error {
-	return c.String(http.StatusOK, "Chào mừng bạn đã đến Home Test Tiki được viết bởi Nimtechnology, Query path /search/?message=string(replace message).")
+	return c.String(http.StatusOK, "Chào mừng bạn đã đến Home Test LittleLive được viết bởi Nimtechnology, Query path /search/?message=string(replace message).")
 }
