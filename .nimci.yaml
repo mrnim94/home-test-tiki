@@ -1,0 +1,8 @@
+jobs:
+  build_docker:
+    steps:
+      - build_image
+workflows:
+  jenkins_pipeline:
+    jobs:
+      - build_docker
