@@ -13,6 +13,10 @@ WORKDIR $GOPATH/src/home-test-tiki
 
 COPY . .
 RUN go mod init home-test-tiki
+RUN go get -v github.com/labstack/echo/v4
+RUN go get -v github.com/lestrrat/go-file-rotatelogs
+RUN go get -v github.com/rifflock/lfshook
+RUN go get -v github.com/sirupsen/logrus
 WORKDIR cmd/production
 RUN GOOS=linux go build -o app
 
