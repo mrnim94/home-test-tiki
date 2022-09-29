@@ -15,9 +15,9 @@ COPY . .
 
 RUN go mod init puppy
 
-# RUN go mod init home-test-tiki
+RUN go mod init home-test-tiki
 WORKDIR cmd/production
-RUN GOOS=linux go build -mod vendor -o app
+RUN GOOS=linux go build -o app
 
 ENTRYPOINT ["./app"]
 
