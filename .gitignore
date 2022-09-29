@@ -1,5 +1,3 @@
-
-go.sum
 migrations/*
 config_file/.env
 log_files/error/*
