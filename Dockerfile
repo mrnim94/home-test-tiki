@@ -13,9 +13,9 @@ WORKDIR $GOPATH/src/home-test-tiki
 
 COPY . .
 
-RUN go mod init home-test-tiki
-# WORKDIR cmd/production
-# RUN GOOS=linux go build -o app
+RUN go mod vendor
+WORKDIR cmd/production
+RUN GOOS=linux go build -o app
 
 # ENTRYPOINT ["./app"]
 
