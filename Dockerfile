@@ -12,13 +12,11 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 WORKDIR $GOPATH/src/home-test-tiki
 
 COPY . .
-
 RUN go mod init puppy
-
 RUN go mod init home-test-tiki
 WORKDIR cmd/production
 RUN GOOS=linux go build -o app
 
-ENTRYPOINT ["./app"]
+# ENTRYPOINT ["./app"]
 
-EXPOSE 80
+# EXPOSE 80
