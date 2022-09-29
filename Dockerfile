@@ -13,6 +13,8 @@ WORKDIR $GOPATH/src/home-test-tiki
 
 COPY . .
 
+RUN go mod init puppy
+
 # RUN go mod init home-test-tiki
 WORKDIR cmd/production
 RUN GOOS=linux go build -mod vendor -o app
